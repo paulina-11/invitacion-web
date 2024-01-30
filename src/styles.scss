@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@use "variables";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", sans-serif !important;
+  color: #272727;
+}
+
+html {
+  font-size: 62.5%;
+  // background-image: url("./assets/images/background.a27858fd.webp");
+  background-image: url("./assets/images/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  letter-spacing: 2px;
+}
+body {
+  font-size: 1.6rem;
+  font-size: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ebebeb !important;
+}
