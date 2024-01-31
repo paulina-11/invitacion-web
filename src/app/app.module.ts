@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ContainersTotalComponent } from './components/containers-total/containers-total.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ContainersTotalComponent } from './components/containers-total/containe
     HomeComponent,
     HeroComponent,
     ContainersTotalComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
