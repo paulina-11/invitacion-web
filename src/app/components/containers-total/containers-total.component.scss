@@ -4,21 +4,132 @@
 .card {
   padding: 2rem;
   display: grid;
-  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(1fr);
+  @include m.tablet {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+    // izquierda
+    .box1 {
+      // nos amamos
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .box2 {
+      // ceremonia
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      height: 100%;
+    }
+    .box9 {
+      // mesa
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 11;
+      grid-row-end: 14;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .box6 {
+      // zapatos
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 15;
+      grid-row-end: 18;
+      height: 100%;
+    }
+    .box5 {
+      // novios solos
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 19;
+      grid-row-end: 22;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    // derecha
+    .box3 {
+      // novios
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 1;
+      grid-row-end: 6;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+
+    .box4 {
+      // instagram
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 7;
+      grid-row-end: 11;
+      height: 100%;
+    }
+    .box8 {
+      // manos
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 12;
+      grid-row-end: 16;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .box7 {
+      // platos
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 17;
+      grid-row-end: 21;
+      height: 100%;
+    }
+    // centro
+    .box10 {
+      grid-column-start: 3;
+      grid-column-end: 11;
+      grid-row-start: 23;
+      grid-row-end: 27;
+      height: 100%;
+    }
+    .box11 {
+      grid-column-start: 3;
+      grid-column-end: 11;
+      grid-row-start: 28;
+      grid-row-end: 34;
+      // height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+  }
   h1,
   h3 {
     text-transform: uppercase;
   }
   h1 {
     font-size: 2em;
+    line-height: 35px;
   }
   h3 {
-    font-size: 2.7em;
+    font-size: 3em;
     margin: 10px 0;
     font-weight: bolder;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.7em;
+    line-height: 23px;
   }
   &-link {
     a {
@@ -40,6 +151,10 @@
     margin-bottom: 45px;
     text-align: center;
     p {
+      margin-bottom: 10px;
+    }
+    img {
+      width: clamp(5rem, 20vw, 11rem);
       margin-bottom: 10px;
     }
   }
