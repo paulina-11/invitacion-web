@@ -13,7 +13,7 @@
       width: 300px;
       margin: 20px 0 20px 0;
       @include m.tablet {
-        width: 580px;
+        max-width: 580px;
         font-size: 3.5em;
         margin: 40px 0 20px 0;
       }
